@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UArizona Workshop Website</title>
+
+  <style>  
+    html{
+      scroll-behavior: smooth;
+    }
+  
+    body{
+      background-color: #f6f7f9;
+      color: gray; /* EDIT HERE!! */
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+  
+    nav{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: gray; /* EDIT HERE!! */
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .logo{
+      font-weight: bold;
+      font-size: 18px;
+    }
+  
+    .nav-links{
+      list-style: none;
+      display: flex;
+    }
+  
+    .nav-links a{
+      color: white;
+      text-decoration: none;
+      padding: 6px 8px;
+      border-radius: 6px;
+    }
+  
+    .nav-links a:hover{
+      background-color: rgba(255,255,255,0.2);
+    }
+  
+    section{
+        padding: 80px 8% 40px;
+    }
+
+  
+    .container{
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  
+    #home{
+      background-color: gray; /* EDIT HERE!! */
+      color: white;
+      text-align: center;
+    }
+  
+    h1{
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  
+    h2{
+      font-size: 32px;
+      margin-bottom: 14px;
+      color: gray; /* EDIT HERE */
+    }
+  
+    h3{
+      margin-bottom: 6px;
+    }
+  
+    .card{
+      background-color: white;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+  
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 10px;
+    }
+  
+    a{
+      color: #ab0520;
+    }
+  
+    a:hover{
+      text-decoration: underline;
+    }
+  
+    footer{
+      background-color: gray; /* EDIT HERE!! */
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+  
+    @media (max-width: 720px){
+      nav{
+        padding: 12px 4%;
+      }
+  
+      .nav-links{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+    }
+  </style>
+  
+</head>
+
+<body>
+  <nav>
+    <div class="logo">UArizona Workshop</div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#campus">Campus Life</a></li>
+      <li><a href="#majors">Majors</a></li>
+      <li><a href="#clubs">??</a></li>
+      <li><a href="#facts">??</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="container">
+      <h1>Website Title</h1> <!-- EDIT HERE!! -->
+      <p></p>
+    </div>
+  </section>
+
+  <section id="campus">
+    <div class="container">
+      <h2>Campus Life</h2>
+
+      <div class="card">
+        <h3>What campus life feels like</h3>
+        <p>
+          Write about dorms, food, events, sports games, and what students do for fun.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Favorite places on campus</h3>
+        <p>
+          Add places like the library, student union, the mall, labs, or a favorite study spot.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="majors">
+    <div class="container">
+      <h2>Majors</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Major 1</h3>
+          <p>Describe what you learn and why it’s interesting.</p>
+        </div>
+
+        <div class="card">
+          <h3>Major 2</h3>
+          <p>What classes or careers connect to this major?</p>
+        </div>
+
+        <!-- EDIT HERE!! -->
+      </div>
+    </div>
+  </section>
+
+  <section id="clubs">
+    <div class="container">
+      <h2>Clubs</h2>
+
+      <div class="card">
+        <h3>Why clubs matter</h3>
+        <p>
+          Clubs help you meet people, learn new skills, and build community.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Club shout-outs</h3>
+        <p>
+          Add club names, what they do, and how to join.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facts">
+    <div class="container">
+      <h2>Fun Facts</h2>
+
+      <div class="card">
+        <h3>Fun facts about UArizona</h3>
+        <ul style="padding-left: 18px; margin-top: 8px;">
+          <li>Fact #1</li>
+          <li>Fact #2</li>
+          <li>Fact #3</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Contact / Links</h3>
+        <!-- EDIT HERE!! -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created by our team | University of Arizona Workshop</p>
+  </footer>
+</body>
+</html>
